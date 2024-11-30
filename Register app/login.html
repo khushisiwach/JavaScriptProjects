@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="FormFill" onsubmit="return validation()">
+                <h2>Login </h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="text" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+              
+                <div class="button">
+                    <input type="submit" class="btn"  onclick="validation()"   value="Login">
+                </div>
+                
+            </form>
+        </div>
+</body>
+</html>
