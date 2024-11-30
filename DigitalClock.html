@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;    /* Centers vertically */
+            background-color: #f0f0f0; /* Light background color */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+        
+        .center {
+            text-align: center; /* Centers text within the div */
+        }
+        
+        #banner {
+            font-size: 24px; /* Larger font for the banner text */
+            font-weight: bold; /* Bold text */
+            margin-bottom: 10px; /* Spacing between banner and clock */
+            color: #333; /* Text color */
+        }
+        
+        #clock {
+            font-size: 48px; /* Larger font for the clock */
+            background: #333; /* Background color */
+            color: white; /* Text color */
+            padding: 20px; /* Padding inside the clock */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div id="banner"><span>Your local time</span></div>
+        <div id="clock"></div>
+    </div>
+</body>
+<script>
+  const clock =  document.getElementById('clock')
+ 
+  setInterval(function(){ //kitne interval ke liye chalana h
+    let date = new Date();// date is a object
+//   console.log(date.toLocaleTimeString());
+    clock.innerHTML = date.toLocaleTimeString();
+//best method 
+  }, 1000) // print time in mili second
+</script>
+</html>
