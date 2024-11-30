@@ -46,11 +46,11 @@
 <script>
   const clock =  document.getElementById('clock')
  
-  setInterval(function(){ //kitne interval ke liye chalana h
-    let date = new Date();// date is a object
+  setInterval(function(){ 
+    let date = new Date();
 //   console.log(date.toLocaleTimeString());
     clock.innerHTML = date.toLocaleTimeString();
-//best method 
-  }, 1000) // print time in mili second
+
+  }, 1000) 
 </script>
 </html>
